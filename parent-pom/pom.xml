@@ -41,7 +41,7 @@
 					<version>${mule.maven.plugin.version}</version>
 					<extensions>true</extensions>
 					<configuration>
-						<cloudhub2Deploment>
+						<cloudhub2Deployment>
 							<uri>https://anypoint.mulesoft.com</uri>
 							<businessGroupId>a95db67e-37e1-44e1-a24c-02ef52889302</businessGroupId>
 							<environment>Sandbox</environment>
@@ -51,7 +51,7 @@
 							<server>cloudhub-deploy</server>
 							<applicationName>${proyect.name}</applicationName>
 							<replicas>1</replicas>
-							<vCores>1</vCores>
+							<vCores>0.1</vCores>
 							<deploymentTimeout>240000</deploymentTimeout>
 							<properties>
 								<anypoint.platform.client_id>${ap.client_id}</anypoint.platform.client_id>
@@ -71,7 +71,7 @@
 								</objectStoreV2>
 							  </services>
 							</integrations>
-						</cloudhub2Deploment>
+						</cloudhub2Deployment>
 					</configuration>
 				</plugin>
 			</plugins>
