@@ -149,5 +149,5 @@ jobs:
       run: |
         artifactName=$(ls *.jar | head -1)
         mvn deploy --file check-in-papi-app/pom.xml -DmuleDeploy \
-        -Dap.client_id=${{ secrets.AP_CLIENT_ID }} \ 
-        -Dap.client_secret=${{ secrets.AP_CLIENT_SECRET }}
+        -Dap.client_id="${{ secrets.AP_CLIENT_ID }}" \ 
+        -Dap.client_secret="${{ secrets.AP_CLIENT_SECRET }}"
